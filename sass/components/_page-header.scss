@@ -1,0 +1,10 @@
+.page-header {
+    display: flex;
+    border-bottom: 1px solid $line-color;
+    height: 80px;
+}
+
+.page-header__nav {
+    display: flex;
+    align-items: center;
+}

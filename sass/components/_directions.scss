@@ -1,0 +1,32 @@
+.directions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.directions__item {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+.directions__title {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+
+    color: $primary-white-color;
+    background-color: $background-transparent-color;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}

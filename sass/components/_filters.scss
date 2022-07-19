@@ -1,0 +1,33 @@
+.filters {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    gap: 8px;
+}
+
+.filters__button {
+    padding: 6px 22px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    background-color: $secondary-white-color;
+    color: $title-text-color;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+    background-color: $accent-color;
+    color: $primary-white-color;
+    box-shadow: 0px 3px 1px $button-border-color,
+        0px 1px 2px $shadow-three-color,
+        0px 2px 2px $shadow-one-color;
+    }
+}
