@@ -1,6 +1,9 @@
 .projects {
-    @media screen and (min-width: 480px) {
     display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @media screen and (min-width: 480px) {
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;

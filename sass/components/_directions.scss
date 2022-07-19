@@ -1,7 +1,12 @@
 .directions {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     gap: 30px;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        
+    }
 }
 
 .directions__item {
@@ -12,6 +17,8 @@
 }
 
 .directions__title {
+    display: none;
+
     position: absolute;
     bottom: 0;
     z-index: 1;
