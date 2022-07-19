@@ -16,7 +16,7 @@
     justify-content: space-around;
     align-items: unset;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
     justify-content: space-between;
     }
 }
@@ -132,7 +132,7 @@
     display: flex;
     width: 200px;
     height: 50px;
-    // gap: 10px;
+    gap: 10px;
     padding-left: 29px;
     justify-content: center;
     align-items: center;
