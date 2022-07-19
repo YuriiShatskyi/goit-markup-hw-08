@@ -1,13 +1,17 @@
 .customers {
     display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
+
 }
 
 .customers__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid $social-networks-color;
     border-radius: 4px;
@@ -19,6 +23,13 @@
 &:focus {
     border-color: $accent-color;
     }
+
+@media screen and (min-width: 768px) {
+    width: 226px;
+    }
+@media screen and (min-width: 1200px) {
+    width: 170px;
+}
 }
 
 .customers__icon {

@@ -24,10 +24,21 @@
 // container 
 
 .container {
-    width: 1200px;
+//     width: 1200px;
+    // min-width: 320px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+
+    @media screen and (min-width: 480px) {
+    width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+    width: 768px;
+        }
+    @media screen and (min-width: 1200px) {
+    width: 1200px;
+    }
 }
 
 // button 
@@ -78,9 +89,20 @@
 // section 
 
 .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+    }
+    
 }
+
+// .section {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+// }
 
 .section--cutted {
     padding-bottom: 0;
@@ -91,7 +113,7 @@
 }
 
 .section__title {
-    margin: 0 auto 50px;
+    margin: 0 auto 30px;
 
     color: $title-text-color;
 
@@ -100,13 +122,20 @@
     line-height: 1.17;
     text-align: center;
 
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;;
+    }
+
 }
 
 // networks 
 
 .networks {
     display: flex;
+    justify-content: center;
     gap: 10px;
+
+    
 }
 
 .networks__link {

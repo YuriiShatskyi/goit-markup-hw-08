@@ -1,17 +1,28 @@
+
+
 .features {
-    display: flex;
-    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
 .features__item {
+    margin-bottom: 30px;
+    
+    @media screen and (min-width: 768px) {
+    width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
     width: 270px;
+    }
 }
 
 .features__bg {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
     height: 120px;
     background-color: $secondary-white-color;
     border-radius: 4px;
@@ -19,7 +30,6 @@
 }
 
 .features__icon {
-    display: block;
     width: 70px;
     height: 70px;
 }
@@ -33,4 +43,6 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+    text-align: center;
 }

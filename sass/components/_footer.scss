@@ -1,20 +1,47 @@
 .footer {
     padding: 60px 0;
     background-color: $background-color;
+    // max-width: 480px;
 }
 
 .footer__flex {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+
+    @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: unset;
+    }
+    @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    }
 }
 
 .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 231px;
+
+    @media screen and (min-width: 1200px) {
+    align-items: unset;
+    }
 }
 
 .footer__address {
     font-style: normal;
     margin-top: 20px;
     color: $primary-white-color;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+    text-align: left;
+    }
 }
 
 .footer__link {
@@ -34,13 +61,13 @@
 }
 
 .footer__item {
-    padding-top: 9px;
+    padding-top: 8px;
 }
 
-.footer__join {
-    margin-left: 70px;
-    padding-top: 12px;
-}
+// .footer__join {
+//     margin-left: 70px;
+//     padding-top: 12px;
+// }
 
 .footer__title {
     margin-bottom: 20px;
@@ -50,24 +77,38 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+    text-align: left;
+    }
 }
 
-.footer__subscription {
-    margin-left: auto;
-    padding-top: 12px;
-}
+// .footer__subscription {
+    // margin-left: auto;
+    // padding-top: 12px;
+    // width: 100%;
+
+   
+// }
 
 .footer__form {
+    @media screen and (min-width: 1200px) {
     display: flex;
+    justify-content: end;
     gap: 12px;
-
+    }
 }
+        
+//     gap: 12px;
+// width: 100%;
 
 .footer__field {
-    display: flex;
-    width: 358px;
+    // display: flex;
+    width: 450px;
     height: 50px;
     padding-left: 16px;
+    margin-bottom: 20px;
 
     border-radius: 4px;
     border: 1px solid $line-grey-color;
@@ -78,14 +119,20 @@
 &::placeholder {
     color: $email-grey-color;
     }
+
+    @media screen and (min-width: 1200px) {
+    width: 358px;
+    }
 }
 
 
 .footer__button {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     width: 200px;
     height: 50px;
-    gap: 10px;
+    // gap: 10px;
     padding-left: 29px;
     justify-content: center;
     align-items: center;
