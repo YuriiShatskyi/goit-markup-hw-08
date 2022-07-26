@@ -1,14 +1,44 @@
 .contacts {
+    display: none;
+    flex-direction: column;
     margin-left: auto;
-    display: flex;
+    
     align-items: center;
-    height: 80px;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        
+    }
 }
 
 .contacts__list {
+    display: block;
+    gap: 10px;
+    justify-content: flex-end;
+
+    @media screen and (min-width: 1200px) {
     display: flex;
     gap: 30px;
-    justify-content: flex-end;
+    }
+
+}
+
+.contacts__item {
+    margin-bottom: 10px;
+    display: flex;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        
+    }
+}
+
+.contacts__item--tel {
+    margin-bottom: 0;
 }
 
 .contacts__link {

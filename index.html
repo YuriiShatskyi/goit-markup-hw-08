@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,18 +17,22 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="page-header">
+    <header class="page-header">
       <nav class="page-header__nav container">
         <a href="./index.html" class="logo">Web<span class="logo__text">Studio</span></a>
-
+        <button class="page-header__button" type="button">
+          <svg class="page-header__icon">
+            <use href="./images/icons.svg#icon-menu" width="40"></use>
+          </svg>
+        </button>
         <ul class="site-nav">
           <li class="site-nav__item">
-            <a class="site-nav__link site-nav__link--current" href="./index.html">Студия</a>
+            <a class="site-nav__link site-nav__link--current" href="./index.html">Студія</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+            <a class="site-nav__link" href="./portfolio.html">Портфоліо</a>
           </li>
-          <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="">Контакти</a></li>
         </ul>
 
         <div class="contacts">
@@ -41,7 +45,7 @@
                 <span>info@devstudio.com</span>
               </a>
             </li>
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--tel">
               <a class="contacts__link" href="tel:+380961111111">
                 <svg class="contacts__icon contacts__icon--width">
                   <use href="./images/icons.svg#icon-tel" width="10"></use>
@@ -52,19 +56,19 @@
           </ul>
         </div>
       </nav>
-    </header> -->
+    </header>
 
     <main>
       <!--Hero-->
 
-      <!-- <section class="hero">
-        <h1 class="hero__title">Эффективные решения<br />для вашего бизнеса</h1>
-        <button class="button" type="button" data-modal-open>Заказать услугу</button>
-      </section> -->
+      <section class="hero">
+        <h1 class="hero__title">Ефективні рішення <br />для вашого бізнесу</h1>
+        <button class="button" type="button" data-modal-open>Замовити послугу</button>
+      </section>
 
       <!-- Modal Window -->
 
-      <!-- <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="modal__close" type="button" data-modal-close>
             <svg class="modal__icon">
@@ -72,10 +76,10 @@
             </svg>
           </button>
           <form class="form" name="form" autocomplete="on">
-            <p class="form__text">Оставьте свои данные, мы вам перезвоним</p>
+            <p class="form__text">Залиште свої дані, ми вам передзвонимо</p>
 
             <label class="form__item" for="user-name">
-              <span class="form__title">Имя</span>
+              <span class="form__title">Ім'я</span>
             </label>
             <div class="form__box">
               <input
@@ -102,7 +106,7 @@
             </div>
 
             <label class="form__item" for="user-email">
-              <span class="form__title">Почта</span>
+              <span class="form__title">Пошта</span>
             </label>
             <div class="form__box">
               <input class="form__field" type="email" name="user-email" id="user-email" required />
@@ -112,10 +116,10 @@
             </div>
 
             <label class="form__item">
-              <span class="form__title"> Комментарий </span>
+              <span class="form__title"> Коментар </span>
               <textarea
                 class="form__field form__field--comment"
-                placeholder="Введите текст"
+                placeholder="Введіть текст"
                 id="comment"
                 required
               ></textarea>
@@ -125,21 +129,21 @@
               <input class="form__checkbox" type="checkbox" name="agreement" id="agreement" />
               <span class="form__checkdraw"></span>
               <span class="form__confirmation"
-                >Соглашаюсь с рассылкой и принимаю
-                <a class="form__link" href="">Условия договора</a></span
+                >Погоджуюся з розсилкою та приймаю
+                <a class="form__link" href="">Умови договору</a></span
               >
             </label>
 
-            <button class="button" type="submit">Отправить</button>
+            <button class="button" type="submit">Відправити</button>
           </form>
         </div>
-      </div> -->
+      </div>
 
       <!--Our features -->
 
       <section class="section section--cutted">
         <div class="container">
-          <h2 class="section__title visually-hidden">Наши особенности</h2>
+          <h2 class="section__title visually-hidden">Наші особливості</h2>
           <ul class="features">
             <li class="features__item">
               <div class="features__bg">
@@ -147,10 +151,8 @@
                   <use href="./images/icons.svg#icon-antenna" width="70"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Внимание к деталям</h3>
-              <p>
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
-              </p>
+              <h3 class="features__title">Увага до деталей</h3>
+              <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
             </li>
             <li class="features__item">
               <div class="features__bg">
@@ -158,10 +160,8 @@
                   <use href="./images/icons.svg#icon-clock" width="70"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Пунктуальность</h3>
-              <p>
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-              </p>
+              <h3 class="features__title">Пунктуальніcть</h3>
+              <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
             </li>
             <li class="features__item">
               <div class="features__bg">
@@ -169,10 +169,8 @@
                   <use href="./images/icons.svg#icon-diagram" width="70"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Планирование</h3>
-              <p>
-                Равным образом консультация с широким активом в значительной степени обуславливает.
-              </p>
+              <h3 class="features__title">Планування</h3>
+              <p>Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
             <li class="features__item">
               <div class="features__bg">
@@ -180,8 +178,8 @@
                   <use href="./images/icons.svg#icon-astronaut" width="70"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Современные технологии</h3>
-              <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              <h3 class="features__title">Сучасні технології</h3>
+              <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
           </ul>
         </div>
@@ -191,19 +189,19 @@
 
       <section class="section section--cutted">
         <div class="container">
-          <h2 class="section__title directions__title">Чем мы занимаемся</h2>
+          <h2 class="section__title section__title">Чим ми займаємося</h2>
           <ul class="directions">
             <li class="directions__item">
               <img src="./images/img-01.jpg" width="370" alt="Друк на клавіатурі" />
-              <h3 class="directions__title">Десктопные приложения</h3>
+              <h3 class="directions__title">Десктопні додатки</h3>
             </li>
             <li class="directions__item">
               <img src="./images/img-02.jpg" width="370" alt="Телефон та ноутбук" />
-              <h3 class="directions__title">Мобильные приложения</h3>
+              <h3 class="directions__title">Мобільні додатки</h3>
             </li>
             <li class="directions__item">
               <img src="./images/img-03.jpg" width="370" alt="Айпед" />
-              <h3 class="directions__title">Дизайнерские решения</h3>
+              <h3 class="directions__title">Дизайнерські рішення</h3>
             </li>
           </ul>
         </div>
@@ -224,7 +222,7 @@
                 alt="Игорь Демьяненко"
               />
               <div class="teammates__info">
-                <h3 class="teammates__title">Игорь Демьяненко</h3>
+                <h3 class="teammates__title">Ігор Дем'яненко</h3>
                 <p class="teammates__position">Product Designer</p>
                 <ul class="networks">
                   <li>
@@ -266,7 +264,7 @@
                 alt="Ольга Репина"
               />
               <div class="teammates__info">
-                <h3 class="teammates__title">Ольга Репина</h3>
+                <h3 class="teammates__title">Ольга Рєпіна</h3>
                 <p class="teammates__position">Frontend Developer</p>
                 <ul class="networks">
                   <li>
@@ -308,7 +306,7 @@
                 alt="Николай Тарасов"
               />
               <div class="teammates__info">
-                <h3 class="teammates__title">Николай Тарасов</h3>
+                <h3 class="teammates__title">Микола Тарасов</h3>
                 <p class="teammates__position">Marketing</p>
                 <ul class="networks">
                   <li>
@@ -350,7 +348,7 @@
                 alt="Михаил Ермаков"
               />
               <div class="teammates__info">
-                <h3 class="teammates__title">Михаил Ермаков</h3>
+                <h3 class="teammates__title">Михайло Єрмаков</h3>
                 <p class="teammates__position">UI Designer</p>
                 <ul class="networks">
                   <li>
@@ -392,7 +390,7 @@
 
       <section class="section">
         <div class="container">
-          <h2 class="section__title">Постоянные клиенты</h2>
+          <h2 class="section__title">Постійні клієнти</h2>
           <ul class="customers">
             <li>
               <a class="customers__link" href="">
@@ -446,7 +444,7 @@
         <div class="footer__contacts">
           <a href="./index.html" class="logo">Web<span class="logo__text--inverse">Studio</span></a>
           <address class="footer__address">
-            <p>г. Киев, пр-т Леси Украинки, 26</p>
+            <p>м. Київ, пр-т Лесі Українки, 26</p>
             <ul class="footer__list">
               <li class="footer__item">
                 <a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -458,7 +456,7 @@
           </address>
         </div>
         <div class="footer__join">
-          <h3 class="footer__title">присоединяйтесь</h3>
+          <h3 class="footer__title">приєднуйтесь</h3>
           <ul class="networks networks--join">
             <li>
               <a class="networks__link networks__link--join" href="">
@@ -491,7 +489,7 @@
           </ul>
         </div>
         <div class="footer__subscription">
-          <h3 class="footer__title">Подпишитесь на рассылку</h3>
+          <h3 class="footer__title">Підпишіться на розсилку</h3>
           <form class="footer__form">
             <label>
               <input
@@ -503,7 +501,7 @@
               />
             </label>
             <button class="footer__button" type="submit">
-              Подписаться
+              Підписатися
               <svg class="footer__icon">
                 <use href="./images/icons.svg#icon-paper-plane" width="24" height="24"></use>
               </svg>

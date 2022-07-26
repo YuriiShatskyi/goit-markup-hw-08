@@ -1,10 +1,41 @@
 .page-header {
     display: flex;
     border-bottom: 1px solid $line-color;
-    height: 80px;
+    height: 60px;
+    justify-content: baseline;
+
+    @media screen and (min-width: 768px) {
+        height: 80px;;
+    }
+    
 }
 
 .page-header__nav {
     display: flex;
     align-items: center;
+}
+
+.page-header__button {
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+    
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    
+}
+
+.page-header__icon {
+    width: 40px;
+    height: 40px; 
+    @media screen and (min-width: 768px) {
+            display: none;
+        }
+
 }

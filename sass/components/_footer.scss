@@ -1,7 +1,6 @@
 .footer {
     padding: 60px 0;
     background-color: $background-color;
-    // max-width: 480px;
 }
 
 .footer__flex {
@@ -10,14 +9,20 @@
     align-items: center;
     gap: 60px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 480px) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: unset;
+    justify-content: center;
+    align-items: baseline;
     }
     @media screen and (min-width: 768px) {
+    justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+    flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
     }
 }
 
@@ -64,10 +69,10 @@
     padding-top: 8px;
 }
 
-// .footer__join {
-//     margin-left: 70px;
-//     padding-top: 12px;
-// }
+.footer__join {
+    display: flex;
+    flex-direction: column;
+}
 
 .footer__title {
     margin-bottom: 20px;
@@ -78,33 +83,33 @@
     line-height: 1.14;
     text-transform: uppercase;
     text-align: center;
+    align-self: center;
 
     @media screen and (min-width: 1200px) {
-    text-align: left;
+        align-self: flex-start;
+        
     }
 }
 
-// .footer__subscription {
-    // margin-left: auto;
-    // padding-top: 12px;
-    // width: 100%;
 
-   
-// }
+.footer__subscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 12px;
+}
 
 .footer__form {
+
     @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: end;
     gap: 12px;
-    }
+    }    
 }
         
-//     gap: 12px;
-// width: 100%;
-
 .footer__field {
-    // display: flex;
     width: 450px;
     height: 50px;
     padding-left: 16px;
@@ -118,6 +123,10 @@
 
 &::placeholder {
     color: $email-grey-color;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 100%;
     }
 
     @media screen and (min-width: 1200px) {
