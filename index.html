@@ -20,11 +20,67 @@
     <header class="page-header">
       <nav class="page-header__nav container">
         <a href="./index.html" class="logo">Web<span class="logo__text">Studio</span></a>
-        <button class="page-header__button" type="button">
-          <svg class="page-header__icon">
-            <use href="./images/icons.svg#icon-menu" width="40"></use>
+        <button class="page-header__button" type="button" data-menu-button aria-expanded="false">
+          <svg class="page-header__pic" aria-label="Переключатель мобільного меню">
+            <use
+              class="page-header__icon page-header__icon--menu"
+              href="./images/icons.svg#icon-menu"
+              width="40"
+              height="40"
+            ></use>
+            <use
+              class="page-header__icon page-header__icon--cross"
+              href="./images/icons.svg#icon-close"
+              width="40"
+              height="40"
+            ></use>
           </svg>
         </button>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" data-menu>
+          <ul class="mobile-nav">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link mobile-nav__link--current" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="">Контакти</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-contacts">
+            <li class="mobile-contacts__item">
+              <a class="mobile-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contacts__item">
+              <a
+                class="mobile-contacts__link mobile-contacts__link--mail"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-networks">
+            <li class="mobile-networks__item">
+              <a class="mobile-networks__link" href="">Instagram</a>
+            </li>
+            <li class="mobile-networks__item">
+              <a class="mobile-networks__link" href="">Twitter</a>
+            </li>
+            <li class="mobile-networks__item">
+              <a class="mobile-networks__link" href="">Facebook</a>
+            </li>
+            <li class="mobile-networks__item">
+              <a class="mobile-networks__link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Site Nav -->
+
         <ul class="site-nav">
           <li class="site-nav__item">
             <a class="site-nav__link site-nav__link--current" href="./index.html">Студія</a>
@@ -189,7 +245,7 @@
 
       <section class="section section--cutted">
         <div class="container">
-          <h2 class="section__title section__title">Чим ми займаємося</h2>
+          <h2 class="section__title section__title visually-hidden">Чим ми займаємося</h2>
           <ul class="directions">
             <li class="directions__item">
               <img src="./images/img-01.jpg" width="370" alt="Друк на клавіатурі" />
@@ -511,5 +567,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

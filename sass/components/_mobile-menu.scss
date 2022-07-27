@@ -1,0 +1,97 @@
+.mobile-menu {
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    width: 100%;
+    height: fit-content;
+    min-height: 100%;
+    // max-width: 768px;
+    padding-left: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    
+    color: $title-text-color;
+    background-color: $primary-white-color;
+    
+    &.is-open {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+    }
+
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.mobile-nav__link:visited {
+    color: currentColor;
+    
+}
+
+.mobile-nav__link--current {
+    color: $accent-color;
+    &:visited {
+        color: $accent-color;
+    }
+}
+
+.mobile-contacts {
+    margin-top: auto;
+    margin-bottom: 64px;
+}
+
+.mobile-contacts__link {
+    font-size: 34px;
+
+    color: $accent-color;
+}
+
+.mobile-contacts__link--mail {
+    font-size: 24px;
+    line-height: 1.17;
+
+    color: $primary-text-color;
+
+}
+
+.mobile-networks {
+    // margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+// .mobile-networks__item {
+
+// }
+
+.mobile-networks__link {
+
+    font-size: 18px;
+    line-height: 1.22;
+
+    color: $accent-color;
+
+}
+
+
+.mobile-networks__item:not(:last-child) .mobile-networks__link {
+    padding-right: 10px;
+    border-right: 1px solid $field-border-color;
+}
+
+

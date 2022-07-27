@@ -1,4 +1,6 @@
 .page-header {
+    position: relative;
+    
     display: flex;
     border-bottom: 1px solid $line-color;
     height: 60px;
@@ -11,17 +13,16 @@
 }
 
 .page-header__nav {
+
     display: flex;
     align-items: center;
 }
 
 .page-header__button {
-    display: flex;
     margin-left: auto;
     padding: 0;
-    
-    justify-content: center;
-    align-items: center;
+    width: 40px;
+    height: 40px;
     background-color: transparent;
     border: none;
 
@@ -31,11 +32,50 @@
     
 }
 
-.page-header__icon {
+.page-header__pic {
+    position: relative;
     width: 40px;
     height: 40px; 
-    @media screen and (min-width: 768px) {
-            display: none;
-        }
+    z-index: 10;
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+}
+
+.page-header__button .page-header__icon--cross {
+    position: absolute;
+    display: none;
+}
+
+.page-header__button.is-open .page-header__icon--cross {
+    display: block;
+    position: fixed;
+    // z-index: 10;
+    
+}
+
+.page-header__button.is-open .page-header__icon--menu {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+
+    position: absolute;
+
+    padding-left: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    top: 0;
+    left: 0;
+    width: 480px;
+    height: fit-content;
+    background-color: aqua;
+
+&.is-open {
+    display: block;
+}
 
 }
+
