@@ -181,6 +181,10 @@ body.modal-open {
   overflow: hidden;
 }
 
+body.menu-button {
+  overflow: hidden;
+}
+
 .logo {
   display: inline-block;
   color: #2196F3;
