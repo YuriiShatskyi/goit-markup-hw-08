@@ -10,9 +10,9 @@
     height: fit-content;
     min-height: 100%;
     // max-width: 768px;
-    padding-left: 40px;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    // padding-left: 40px;
+    padding: 48px 40px;
+    // padding-bottom: 48px;
     
     font-family: inherit;
     font-weight: 500;
@@ -86,7 +86,7 @@
 // }
 
 .mobile-networks__link {
-
+    
     font-size: 18px;
     line-height: 1.22;
 

@@ -363,7 +363,7 @@ ul {
   position: relative;
   width: 40px;
   height: 40px;
-  z-index: 10;
+  z-index: 6;
 }
 .page-header__pic:hover, .page-header__pic:focus {
   fill: #2196F3;
@@ -593,7 +593,7 @@ ul {
   position: absolute;
   left: 50%;
   top: 50%;
-  z-index: 15;
+  z-index: 10;
   transform: translate(-50%, -50%) scale(1);
   width: 450px;
   height: 609px;
@@ -610,7 +610,7 @@ ul {
 
 .modal__close {
   position: absolute;
-  z-index: 10;
+  z-index: 11;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -717,7 +717,7 @@ ul {
   position: absolute;
   left: 12px;
   top: 50%;
-  z-index: 2;
+  z-index: 5;
   cursor: pointer;
   width: 18px;
   height: 18px;
@@ -1271,9 +1271,7 @@ ul {
   height: -moz-fit-content;
   height: fit-content;
   min-height: 100%;
-  padding-left: 40px;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding: 48px 40px;
   font-family: inherit;
   font-weight: 500;
   font-size: 40px;
