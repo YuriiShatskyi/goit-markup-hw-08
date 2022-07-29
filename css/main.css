@@ -288,13 +288,15 @@ body.menu-button {
   margin: 0 auto 30px;
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .section__title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
   }
 }
 
@@ -813,6 +815,7 @@ body.menu-button {
 @media screen and (min-width: 768px) {
   .features__item {
     width: 354px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -865,6 +868,15 @@ body.menu-button {
   }
 }
 
+.directions__section-title--dissap {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .directions__section-title--dissap {
+    display: block;
+  }
+}
+
 .directions__item {
   position: relative;
   display: flex;
@@ -898,7 +910,7 @@ body.menu-button {
   .teammates {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 30px;
   }
 }
 
@@ -912,6 +924,7 @@ body.menu-button {
 @media screen and (min-width: 768px) {
   .teammates__item {
     width: 354px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1157,11 +1170,12 @@ body.menu-button {
   flex-wrap: wrap;
   margin-bottom: 40px;
   justify-content: left;
-  gap: 8px;
+  gap: 15px;
 }
 @media screen and (min-width: 768px) {
   .filters {
     justify-content: center;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1172,7 +1186,6 @@ body.menu-button {
 
 .filters__button {
   padding: 6px 22px;
-  margin-bottom: 15px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
