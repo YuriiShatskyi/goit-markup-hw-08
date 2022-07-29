@@ -1,19 +1,20 @@
 .directions {
-    display: none;
+    // display: none;
+display: flex;
     flex-wrap: wrap;
     gap: 30px;
 
-    @media screen and (min-width: 1200px) {
-        display: flex;
-    }
+    // @media screen and (min-width: 1200px) {
+    //     
+    // }
 }
 
-.directions__section-title--dissap {
-    display: none;
-        @media screen and (min-width: 1200px) {
-                display: block;
-            }
-        }
+// .directions__section-title--dissap {
+//     display: none;
+//         @media screen and (min-width: 1200px) {
+//                 display: block;
+//             }
+//         }
 
 
 .directions__item {

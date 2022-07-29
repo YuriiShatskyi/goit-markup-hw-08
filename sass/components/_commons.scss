@@ -111,8 +111,21 @@ body.menu-button {
     
 }
 
+.section--dissap {
+    display: none;
+        display: none;
+        
+            @media screen and (min-width: 1200px) {
+                display: block;
+            }
+        
+}
+
 .section--cutted {
+    @media screen and (min-width: 1200px) {
     padding-bottom: 0;
+        }
+    
 }
 
 .section--bg {
