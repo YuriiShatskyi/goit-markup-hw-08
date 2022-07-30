@@ -5,8 +5,11 @@
     z-index: 10;
     transform: translate(-50%, -50%) scale(1.0);
 
-    width: 450px;
-    height: 609px;
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
+    overflow: scroll;
 
     background-color: $primary-white-color;
     border-radius: 4px;
@@ -14,7 +17,9 @@
         0px 1px 1px $shadow-two-color, 0px 2px 1px rgba(0, 0, 0, 0.2);
 
     @media screen and (min-width: 1200px) {
+        max-width: 528px;
         width: 528px;
+        max-height: 581px;
         height: 581px;
         
     }
@@ -52,6 +57,7 @@
 }
 
 .modal__icon {
+
     width: 11px;
     height: 11px;
     fill: $black-color;

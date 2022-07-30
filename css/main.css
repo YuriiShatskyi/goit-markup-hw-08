@@ -626,15 +626,20 @@ body.menu-button {
   top: 50%;
   z-index: 10;
   transform: translate(-50%, -50%) scale(1);
-  width: 450px;
-  height: 609px;
+  width: 95%;
+  max-width: 450px;
+  height: 95%;
+  max-height: 609px;
+  overflow: scroll;
   background-color: #FFFFFF;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 1200px) {
   .modal {
+    max-width: 528px;
     width: 528px;
+    max-height: 581px;
     height: 581px;
   }
 }
@@ -768,7 +773,7 @@ body.menu-button {
 
 .form__agreement {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -781,6 +786,7 @@ body.menu-button {
   .form__agreement {
     font-size: 14px;
     line-height: 1.71;
+    justify-content: center;
   }
 }
 
@@ -1311,6 +1317,7 @@ body.menu-button {
 .mobile-menu {
   display: none;
   position: fixed;
+  scroll-behavior: auto;
   top: 0;
   left: 0;
   z-index: 3;
