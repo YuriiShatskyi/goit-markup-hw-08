@@ -627,6 +627,7 @@ body.menu-button {
   transform: translate(-50%, -50%) scale(1);
   width: 95%;
   max-width: 450px;
+  min-width: 320px;
   height: 95%;
   max-height: 609px;
   overflow: scroll;
@@ -1319,6 +1320,7 @@ body.menu-button {
   left: 0;
   z-index: 3;
   width: 100%;
+  min-width: 320px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
