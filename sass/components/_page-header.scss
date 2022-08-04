@@ -51,7 +51,6 @@
 .page-header__button.is-open .page-header__icon--cross {
     display: block;
     position: fixed;
-    // z-index: 10;
     
 }
 
@@ -71,7 +70,6 @@
     left: 0;
     width: 480px;
     height: fit-content;
-    background-color: aqua;
 
 &.is-open {
     display: block;

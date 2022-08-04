@@ -10,10 +10,7 @@
     width: 100%;
     height: fit-content;
     min-height: 100%;
-    // max-width: 768px;
-    // padding-left: 40px;
     padding: 48px 40px;
-    // padding-bottom: 48px;
     
     font-family: inherit;
     font-weight: 500;
@@ -32,7 +29,6 @@
         display: flex;
         flex-direction: column;
         transform: translatey(0);
-        // justify-content: space-between;
 
     }
 
@@ -76,15 +72,10 @@
 }
 
 .mobile-networks {
-    // margin-top: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
-
-// .mobile-networks__item {
-
-// }
 
 .mobile-networks__link {
     

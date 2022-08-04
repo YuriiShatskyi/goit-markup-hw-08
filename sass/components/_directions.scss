@@ -1,21 +1,9 @@
 .directions {
-    // display: none;
-display: flex;
+    display: flex;
     flex-wrap: wrap;
     gap: 30px;
 
-    // @media screen and (min-width: 1200px) {
-    //     
-    // }
 }
-
-// .directions__section-title--dissap {
-//     display: none;
-//         @media screen and (min-width: 1200px) {
-//                 display: block;
-//             }
-//         }
-
 
 .directions__item {
     position: relative;
